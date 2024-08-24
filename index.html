@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Search App Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body class="bg-dark">
+    <div class="container">
+
+      <h1 class="text-center text-white mt-5">Pokemon Search App Project v2</h1>
+      <div class="row justify-content-md-center mt-5 text-white">
+        <div class="col-md-12 col-lg-6">
+          <div class="mb-3">
+            <label for="search-input" class="form-label">Search for Pokémon Name or ID</label>
+            <div class="row">
+              <div class="col-9 input-div">
+                <input type="text" class="form-control" id="search-input" placeholder="Name or ID" required>
+                <i id="remove-input" class="fa fa-remove" style="font-size:24px"></i>
+                </div>
+              <div class="col-3 d-grid">
+                <button type="button" id="search-button" class="btn btn-primary btn-full">Search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-md-center mt-5 text-white">
+        <div class="col-md-12 col-lg-6">
+          <div class="pokemon-box">
+            
+            <div class="d-flex justify-content-between align-items-center">
+              <h2 id="pokemon-name"></h2>
+              <span id="pokemon-id"></span>
+            </div>
+            <div id="pokemon-img" class="text-center">
+            </div>
+            <p id="types"></p>
+          </div>
+          <table class="table table-dark table-sm">
+            <thead>
+              <tr>
+                <th scope="col">Base</th>
+                <th scope="col" col>Stats</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HP :</td>
+                <td id="hp"></td>
+              </tr>
+              <tr>
+                <td>Attack :</td>
+                <td id="attack"></td>
+              </tr>
+              <tr>
+                <td>Defense :</td>
+                <td id="defense"></td>
+              </tr>
+              <tr>
+                <td>Special Attack :</td>
+                <td id="special-attack"></td>
+              </tr>
+              <tr>
+                <td>Special Defense :</td>
+                <td id="special-defense"></td>
+              </tr>
+              <tr>
+                <td>Speed :</td>
+                <td id="speed"></td>
+              </tr>
+              <tr>
+                <td>Weight :</td>
+                <td id="weight"></td>
+              </tr>
+              <tr>
+                <td>Height :</td>
+                <td id="height"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

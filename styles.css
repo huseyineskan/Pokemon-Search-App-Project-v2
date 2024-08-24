@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#pokemon-img{
+    height: 200px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#types span{
+    background-color: #f39c12;
+    color: #333;
+    font-weight: 600;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#types span:not(:first-child){
+    margin-left: 10px;
+}
+
+.input-div{
+    position: relative;
+}
+
+#remove-input{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: #e74c3c;
+    border-radius: 5px;
+    cursor: pointer;
+}
